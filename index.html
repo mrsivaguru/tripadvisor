@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .auth {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .auth button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            padding-bottom: 5px;
+        }
+
+        .tabs .active {
+            border-bottom: 2px solid black;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 60px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            width: 50%;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            background-color: #00aa6c;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .promo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 880px;
+            height: 300px;
+            margin: auto;
+            background: #fd5b61;
+            border-radius: 10px;
+        }
+
+        .promo-img {
+            position: relative;
+        }
+
+        .promo-img img {
+            width: 400px;
+            border-radius: 15px;
+        }
+
+        .credit {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: #fd5b61;
+            color: black;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .promo-text {
+            background-color: #fd5b61;
+            padding: 40px;
+            color: black;
+            border-radius: 15px;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .promo-text h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .promo-text p {
+            margin-bottom: 20px;
+        }
+
+        .promo-text button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .vertical-line {
+            border-left: 1px solid black;
+            height: 250px;
+            margin: 0 20px;
+        }
+        .footer{
+            padding: 80px;
+            background-color: black;
+            color: white;
+        }
+        .footer_one{
+            display: flex;
+            gap: 20px;
+        }
+        .footer_one p{
+            margin: 10px;
+            justify-content: space-between;
+        }
+        .footer_two {
+            margin: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media(max-width:765px) body {
+
+            padding: 0.75rem
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                alt="Tripadvisor Logo">
+        </div>
+        <nav class="nav">
+            <a href="#">Discover</a>
+            <a href="#">Trips</a>
+            <a href="#">Review</a>
+            <a href="#">Forums</a>
+        </nav>
+        <div class="auth">
+            <span>INR</span>
+            <button>Sign in</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1>Where to?</h1>
+
+        <div class="tabs">
+            <a href="#" class="active">Search All</a>
+            <a href="#">Hotels</a>
+            <a href="#">Things to Do</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Flights</a>
+            <a href="#">Holiday Homes</a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Places to go, things to do, hotels...">
+            <button>Search</button>
+        </div>
+
+        <section class="promo">
+            <div class="promo-img">
+                <img src="./image/kayaking.jpg" Kayaking">
+                <span class="credit">@gfish58</span>
+            </div>
+            <div class="vertical-line"></div>
+
+            <div class="promo-text">
+                <h1>Book the best part of your trip</h1>
+                <p>Browse unforgettable things to do—right here.</p>
+                <button>Find things to do</button>
+             </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
